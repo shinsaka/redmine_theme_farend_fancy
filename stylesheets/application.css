@@ -16,7 +16,7 @@
  */
 
 body {
-  font-family: Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif;
+  font-family: Meiryo UI, Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif;
   color: #222;
 }
 
@@ -174,7 +174,9 @@ tr.changeset td.committed_on {
 tr.version.closed, tr.version.closed a {
   color: #666
 }
-
+td.assigned_to {
+  font-size: smaller;
+}
 tr.assigned-to-me td.assigned_to, tr.created-by-me td.author {
   font-weight: bold;
   font-size: 11px;
@@ -193,6 +195,12 @@ tr.even.overdue {
 tr.odd.overdue td, tr.even.overdue td {
   border-color: #fcc
 }
+.overdue .due_date {
+  color: #FFFFFF;
+  background-color:#FF9999;
+  font-weight: bold;
+}
+
 
 /* Issues grid styles by priorities (provided by Wynn Netherland) */
 
@@ -316,7 +324,8 @@ tr.closed td.id, tr.closed td.subject {
 
 /* submitボタンを押しやすく */
 input[type="submit"] {
-  font-size: 12px;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 /* テキストボックスで等幅フォントを使用 */
@@ -343,6 +352,22 @@ div.issue div.subject p {
 
 div.issue .next-prev-links {
   color:#666;
+}
+
+td.subject {
+  font-size: 14px;
+}
+.issue {
+    font-size: 11px;
+}
+
+/* layout balance */
+#sidebar {
+    width:10%;
+    font-size: smaller;
+}
+#content {
+    width:88%;
 }
 
 div#issue_tree .contextual a[href*="/issues/new"] {
@@ -594,3 +619,5 @@ div.message {
 
 /* http://www.redmine.org/issues/11825 */
 html>body .tabular p {overflow:visible;}
+
+
