@@ -363,11 +363,10 @@ td.subject {
 
 /* layout balance */
 #sidebar {
-    width:12%;
-    font-size: smaller;
+    width:20%;
 }
 #content {
-    width:86%;
+    width:78%;
 }
 
 div#issue_tree .contextual a[href*="/issues/new"] {
