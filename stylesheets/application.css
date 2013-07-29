@@ -16,7 +16,7 @@
  */
 
 body {
-  font-family: Meiryo UI, Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif;
+  font-family: "Meiryo UI", Meiryo, "Hiragino Kaku Gothic Pro", "MS PGothic", Verdana, sans-serif;
   color: #222;
 }
 
@@ -331,14 +331,12 @@ input[type="submit"] {
 /* テキストボックスで等幅フォントを使用 */
 
 input[type="text"] {
-  font-family: "Osaka-Mono", "MS Gothic", sans-serif;
-  font-size: 100%;
+  font-family: monospace, "Osaka-Mono", "MS Gothic", sans-serif;
 }
 
 textarea.wiki-edit {
-  font-family: "Osaka-Mono", "MS Gothic", sans-serif;
-  letter-spacing: normal;
-  line-height: 130%;
+  font-family: monospace, "Osaka-Mono", "MS Gothic", sans-serif;
+  font-size: small;
 }
 
 div.issue {
@@ -619,4 +617,27 @@ div.message {
 /* http://www.redmine.org/issues/11825 */
 html>body .tabular p {overflow:visible;}
 
-
+/* status color */
+/* 新規 */
+.status-1 .status{
+  color:#85C0FF;
+  font-weight: bold;
+}
+/* 作業中 */
+.status-2 .status{
+  color:#FFD600;
+  font-weight: bold;
+}
+/* レビュー */
+.status-3 .status{
+  color:#ED4262;
+  font-weight: bold;
+}
+/* 確認中 */
+.status-7 .status{
+  color:#02AD74;
+}
+/* 保留 */
+.status-8 .status{
+  color:#aaa;
+}
