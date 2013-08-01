@@ -641,3 +641,18 @@ html>body .tabular p {overflow:visible;}
 .status-8 .status{
   color:#aaa;
 }
+
+div.wiki ul.toc .heading1 {
+}
+div.wiki ul.toc .heading2 {
+  margin-left: 1em;
+}
+div.wiki ul.toc .heading3 {
+  margin-left: 2em;
+}
+div.wiki ul.toc .heading4 {
+  margin-left: 3em;
+}
+div.wiki ul.toc .heading5 {
+  margin-left: 4em;
+}
